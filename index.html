@@ -3,76 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css excercise 5</title>
+    <title>css flexbox</title>
+   
     <style>
-        .parent{
+        /* you can also use flex start flex end around space in justify content
+        and this property can also use in align item and when there is > 1 line the use align content */
+        .container{
             border: 2px solid black;
-            background-color: aqua;
-            position: sticky;
-            top: 3px;
-        }
-
-        ul {
-             display: flex;
-        }
-        ul li{
-            list-style: none;
-            padding: 12px;
-        }
-        .box1{
-            height: 400px;
-            width: 400px;
-            margin: 40px;
-            padding: 50px;
-            border: 2px solid black;
-            background-color: purple;
-            font-size: 50px;
-        }
-         .box2{
-            height: 400px;
-            width: 400px;
-            margin: 40px;
-            padding: 50px;
-            border: 2px solid black;
-            background-color: hotpink;
-            font-size: 50px;
-        }
-        .decent{
-            border: 2px solid black;
-            background-color: rgb(15, 78, 15);
+            height: 80vh;
             display: flex;
-            padding: 150px;
+            /* justify-content:center; */
+            /* align-items: center; */
+            align-content:flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+           gap: 30px  5px;
+            
+            /* u can use column/row wise and riverse of both in flex direction */
         }
-        footer{
-            height: 100px;
-            width: 80wv;
+        .item{
+            height: 90px;
+            width: 90px;
+            padding: 10px;
+            background-color: purple;
             border: 2px solid black;
-            border-radius: 6px;
-            font-size: 60px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="parent">
-      <nav>
-        <ul>
-            <li><a href="sec.html">HOME</a></li>
-            <li><a href="https://chatgpt.com/?hints=search&openaicom_referred=true"> ABOUT</a></li>
-            <li>HELP</li>
-            <li>SERVICES</li>
-            <li>CONTACT</li>
-        </ul>
-    </nav>
-    </div>
-    <div class="decent">
-       <div class="box1">box1</div>
-    <div class="box2">box2</div>
-    </div>
-    
-    <footer>
-        welcome to sigma web development express
-    </footer>
-    
+    <main>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+             <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+              <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <script>
+            console.log("SLKDOKDO")
+            alert("KJHJHHKJHJKJ")
+        </script>
+    </main>
 </body>
 </html>
