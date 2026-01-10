@@ -1,0 +1,323 @@
+ /* ================= MEDIA QUERY ================= */
+ @media (max-width: 480px) {
+
+     /* NAVBAR */
+     nav {
+         padding: 0 15px;
+     }
+
+     nav img {
+         width: 120px;
+     }
+
+     nav div {
+         display: flex;
+         gap: 8px;
+     }
+
+     /* HERO SECTION */
+     .hero {
+         padding: 20px;
+         text-align: center;
+     }
+
+     .hero span {
+         font-size: 1rem;
+     }
+
+     .hero span:first-child {
+         font-size: 1.8rem;
+         font-weight: bold;
+     }
+
+     .hero div {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+         width: 100%;
+     }
+
+     .hero input {
+         width: 100%;
+     }
+
+     .hero button {
+         width: 100%;
+     }
+
+     /* CONTENT SECTIONS */
+     .box1,
+     .box2,
+     .box3 {
+         flex-direction: column;
+         text-align: center;
+         padding: 40px 20px;
+         gap: 20px;
+     }
+
+     .box1 div:first-child,
+     .box2 div:first-child,
+     .box3 div:first-child {
+         font-size: 1.5rem;
+     }
+
+     .box1 video,
+     .box2 video,
+     .box3 video {
+         width: 100%;
+         max-width: 100%;
+     }
+
+     /* FAQ */
+     .faq {
+         padding: 40px 15px;
+     }
+
+     .faq h2 {
+         font-size: 2rem;
+     }
+
+     .faqbox {
+         font-size: 1rem;
+         padding: 18px;
+     }
+
+     /* MEMBERSHIP */
+     .form {
+         flex-direction: column;
+         gap: 10px;
+     }
+
+     .lastinput,
+     .lastbutton {
+         width: 100%;
+     }
+ }
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body {
+     background: black;
+     color: white;
+ }
+
+ /* ================= NAVBAR ================= */
+ nav {
+     max-width: 75vw;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 80px;
+ }
+
+ nav img {
+     width: 150px;
+ }
+
+ nav button {
+     padding: 7px 14px;
+     margin-left: 10px;
+ }
+
+ /* ================= HERO ================= */
+ .main {
+     background-image: url("assets/images/img1.webp");
+     background-size: cover;
+     background-position: center;
+     position: relative;
+ }
+
+ .box {
+     position: absolute;
+     inset: 0;
+     background: black;
+     opacity: 0.65;
+ }
+
+ .hero {
+     height: calc(100vh - 80px);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 18px;
+     text-align: center;
+     padding: 0 20px;
+     position: relative;
+     z-index: 1;
+ }
+
+ .hero span:nth-child(1) {
+     font-size: 3rem;
+     font-weight: bold;
+ }
+
+ .hero span:nth-child(2),
+ .hero span:nth-child(3) {
+     font-size: 1.3rem;
+ }
+
+ .hero div {
+     display: flex;
+     gap: 10px;
+ }
+
+ .hero input {
+     padding: 14px;
+     width: 320px;
+     background: rgba(0, 0, 0, 0.7);
+     border: 1px solid gray;
+     color: white;
+ }
+
+ .hero button {
+     padding: 14px 25px;
+     background: red;
+     color: white;
+     border: none;
+     font-size: 1.1rem;
+     cursor: pointer;
+ }
+
+ /* ================= SECTIONS ================= */
+ .box1,
+ .box2,
+ .box3 {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     max-width: 75vw;
+     margin: auto;
+     padding: 80px 0;
+     gap: 50px;
+ }
+
+ .box1 div:first-child,
+ .box2 div:first-child,
+ .box3 div:first-child {
+     font-size: 2.5rem;
+     font-weight: bold;
+ }
+
+ .box1 video,
+ .box2 video,
+ .box3 video {
+     width: 100%;
+     max-width: 500px;
+ }
+
+ /* ================= SEPARATION LINE ================= */
+ .separation {
+     height: 7px;
+     background: rgb(50, 50, 50);
+ }
+
+ /* ================= FAQ ================= */
+ .faq {
+     max-width: 70vw;
+     margin: auto;
+     padding: 70px 0;
+ }
+
+ .faq h2 {
+     text-align: center;
+     font-size: 3rem;
+     margin-bottom: 30px;
+ }
+
+ .faqbox {
+     background: rgb(45, 45, 45);
+     padding: 22px;
+     font-size: 1.4rem;
+     margin-bottom: 10px;
+     cursor: pointer;
+ }
+
+ /* ================= MEMBERSHIP ================= */
+ .membership {
+     text-align: center;
+     padding: 40px 20px;
+ }
+
+ .form {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     margin-top: 15px;
+ }
+
+ .lastinput {
+     padding: 14px;
+     width: 300px;
+ }
+
+ .lastbutton {
+     padding: 14px 22px;
+     background: red;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }
+
+ /* ================= MOBILE RESPONSIVE ================= */
+ @media (max-width: 768px) {
+
+     nav {
+         max-width: 90vw;
+     }
+
+     .hero span:nth-child(1) {
+         font-size: 2rem;
+     }
+
+     .hero span:nth-child(2),
+     .hero span:nth-child(3) {
+         font-size: 1rem;
+     }
+
+     .hero div {
+         flex-direction: column;
+         width: 100%;
+     }
+
+     .hero input {
+         width: 100%;
+     }
+
+     .box1,
+     .box2,
+     .box3 {
+         flex-direction: column;
+         text-align: center;
+         max-width: 90vw;
+     }
+
+     .box1 div:first-child,
+     .box2 div:first-child,
+     .box3 div:first-child {
+         font-size: 1.7rem;
+     }
+
+     .faq {
+         max-width: 90vw;
+     }
+
+     .faq h2 {
+         font-size: 2rem;
+     }
+
+     .form {
+         flex-direction: column;
+     }
+
+     .lastinput {
+         width: 100%;
+     }
+ }

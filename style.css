@@ -1,0 +1,206 @@
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     background-color: black;
+ }
+
+ .main {
+     background-image: url(assets/images/img1.webp);
+     background-repeat: no-repeat;
+     background-size: 100vw;
+     background-position: center center;
+     height: 80vh;
+     width: 100vw;
+     position: relative;
+ }
+
+ .main .box {
+
+     height: 80vh;
+     width: 100vw;
+     background-color: black;
+     opacity: 0.7;
+     position: absolute;
+     top: 0;
+     padding: 10px;
+ }
+
+ nav {
+     height: 65px;
+     width: 60vw;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: auto;
+     text-align: center;
+ }
+
+ nav img {
+     position: relative;
+     z-index: 10;
+ }
+
+ nav button {
+     position: relative;
+     z-index: 10;
+ }
+
+ .hero {
+     height: calc(100% - 65px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     color: white;
+     position: relative;
+     z-index: 10;
+     gap: 20px;
+     padding: 0px 30px;
+ }
+
+ .hero :nth-child(1) {
+     font-weight: bolder;
+     font-size: 50px;
+     text-align: center;
+ }
+
+ .hero:nth-child(2) {
+     font-weight: 400;
+     font-size: 30px;
+     text-align: center;
+ }
+
+ .hero:nth-child(3) {
+     font-weight: 400;
+     font-size: 30px;
+     text-align: center;
+ }
+
+ .separation {
+     height: 14px;
+     background-color: gray;
+     border-radius: 5px;
+ }
+
+ .btn {
+     padding: 7px 14px;
+     font-weight: bold;
+ }
+
+ .btn1 {
+     background-color: red;
+     color: white;
+ }
+
+ .btn2 {
+     background-color: red;
+     color: white;
+ }
+
+ .main input {
+     padding: 7px 10px;
+     font-weight: 700;
+     font-size: 12px;
+     border-radius: 4px;
+
+ }
+
+ .box1 {
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 80vw;
+     margin: auto;
+     color: white;
+     font-size: 50px;
+ }
+
+ .box2 {
+     height: 40vh;
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     max-width: 90vw;
+     margin: auto;
+     color: white;
+     font-size: 55px;
+ }
+
+ .box3 {
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 90vw;
+     margin: auto;
+     color: white;
+     font-size: 70px;
+ }
+
+
+ .first video {
+     height: 500px;
+     width: 650px;
+ }
+
+ .second video {
+     height: 550px;
+     width: 650px;
+ }
+
+ .third video {
+     height: 550px;
+     width: 650px;
+ }
+
+ div>span {
+     font-size: 40px;
+ }
+
+ .faq {
+     color: white;
+ }
+
+ .faq h2 {
+     font-size: 48px;
+     text-align: center;
+     padding: 35px;
+ }
+
+ .faqbox {
+     transition: all 0.5s ease-out;
+     display: flex;
+     margin: 34px auto;
+     background-color: gray;
+     padding: 25px;
+     width: 40vw;
+ }
+
+ .faqbox:hover {
+     background-color: rgb(37 36 36);
+ }
+
+ .membership {
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+
+ }
+
+ .lastinput {
+     padding: 10px 5px;
+     border-radius: 4px;
+ }
+
+ .lastbutton {
+     background-color: red;
+     color: white;
+     padding: 10px 5px;
+     border-radius: 4px;
+ }
